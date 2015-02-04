@@ -19,8 +19,13 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(sender: AnyObject) {
        
         var humanYears = textField.text.toInt()
-        var catYears = humanYears! * 7
-        resultLabel.text = String(catYears)
+        
+        if (humanYears != nil){
+            var catYears = humanYears! * 7
+            resultLabel.text = "Cat is \(String(catYears)) years old"
+        } else {
+            resultLabel.text = "Invalid year"
+        }
         
     }
     

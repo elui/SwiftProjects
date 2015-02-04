@@ -9,6 +9,10 @@ var j : Double
 
 j = 5
 
+j % 2
+
+var j : Bool
+
 
 
 
